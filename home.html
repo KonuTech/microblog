@@ -27,11 +27,13 @@
             Add new entry
         </h1>
         <form action="/entry" method="post">
-            <label for="sample-field">
-                Sample:
-            </label>
-            <input type="text" name="sample" id="sample-field"/>
-            <button type="submit">
+            <p class="form__input">
+                <label for="entry" class="form__label">
+                    Entry contents
+                </label>
+                <textarea name="content" id="entry" class="form__textarea"></textarea>
+            </p>
+            <button type="submit" clas="form__submit">
                 Submit
             </button>
         </form>
@@ -51,7 +53,23 @@
         </article>
     </section>
 </main>
-<footer>
+<footer class="footer">
+    <div class="footer__content">
+        <section class="left">
+            <a class="footer__item" href="#">Made by Konrad Borowiec</a>
+            <a class="footer__item" href="#">Check out my other projects</a>
+        </section>
+        <section class="right">
+            <div class="footer__column">
+                <a class="footer__item" href="#">
+                    Recent
+                </a>
+                <a class="footer__item" href="#">
+                    Check out my other projects
+                </a>
+            </div>
+        </section>
+    </div>
 </footer>
 </body>
 </html>
