@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microblog</title>
+</head>
+<body>
+<header class="navbar">
+    <div class="navbar__brand">
+        <img src="logo.svg" alt="The Microblog logo"/>Microblog
+    </div>
+    <ul class="navbar__navigation">
+        <li class=navbar__navigation-item>
+            <a href="#" class="navbar__link">Recent</a>
+        </li>
+        <li class=navbar__navigation-item>
+            <a href="#" class="navbar__link">Calendar</a>
+        </li>
+    </ul>
+</header>
+<main>
+    <section>
+        <h1>
+            Add new entry
+        </h1>
+        <form action="/entry" method="post">
+            <label for="sample-field">
+                Sample:
+            </label>
+            <input type="text" name="sample" id="sample-field"/>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </section>
+    <section>
+        <h1>
+            Recent posts
+        </h1>
+        <article>
+            <div>
+                <h2>A bit of a chill day today</h2>
+                <time datetime="21-02-2023">Feb 21</time>
+            </div>
+            <p>
+                Today I couldn't do much programming, but that's OK! Can't be too awesome every day now!
+            </p>
+        </article>
+    </section>
+</main>
+<footer>
+</footer>
+</body>
+</html>
