@@ -12,6 +12,11 @@ class GalileonMoons:
         self.fourth = fourth
 
 
+@app.route("/second-page/")
+def hello_world_fancy():
+    return render_template("second_page.html")
+
+
 @app.route("/expressions/")
 def hello_world():
 
@@ -70,6 +75,46 @@ def render_data_structures():
     return render_template("data_structures.html", **kwargs)
 
 
-@app.route("/second-page/")
-def hello_world_fancy():
-    return render_template("second_page.html")
+@app.route("/conditionals-basics/")
+def render_conditionals():
+    company = "Microsoft"
+    return render_template("conditionals_basics.html", company=company)
+
+
+@app.route("/for-loop/")
+def render_loops_for():
+
+    planets = [
+        "Mercury",
+        "Venus",
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune"
+    ]
+
+    planets = {
+        "Mercury": "Mercury",
+        "Venus": "Venus",
+        "Earth": "Earth",
+        "Mars": "Mars",
+        "Jupiter": "Jupiter",
+        "Saturn": "Saturn",
+        "Uranus": "Uranus",
+        "Neptune": "Neptune"
+    }
+
+    return render_template("for_loop.html", planets=planets)
+
+@app.route("/for-loop/conditionals/")
+def render_for_loop_conditionals():
+    user_os = {
+        "Bob Smith": "Windows",
+        "Anne Pun": "MacOS",
+        "Adam Lee": "Linux",
+        "Jose Salvatierra": "Windows"
+    }
+
+    return render_template("loops_and_conditionals.html", user_os=user_os)

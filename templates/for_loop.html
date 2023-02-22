@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<ul>-->
+<!--    {% for planet in planets %}-->
+<!--        <li>{{ planet }}</li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
+<ul>
+    {% for key, value in planets.items() %}
+        <li>{{ value }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

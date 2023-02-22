@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Statements</title>
+</head>
+<body>
+<h1>Conditionals in Jinja2</h1>
+<h2>Basic comparisons</h2>
+
+{% if company %}
+<h3>Available Apple products</h3>
+<ul>
+    <li>iPhone</li>
+    <li>iPad</li>
+    <li>iMac</li>
+</ul>
+{% else %}
+<p>No {{ company }} products are available.</p>
+{% endif %}
+</body>
+</html>
