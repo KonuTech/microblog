@@ -79,7 +79,7 @@ body {
 }
 
 .form__submit {
-    backdrop-color: #3cd0ff;
+    background-color: #3cd0ff;
     border: none;
     font-size: 18px;
     font-weight: bold;
@@ -89,6 +89,6 @@ body {
     cursor: pointer;
 }
 
-.form__submit:hober {
+.form__submit:hover {
     backdrop-color: #18c1e1;
 }
