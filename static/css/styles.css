@@ -91,7 +91,7 @@ body {
 }
 
 .form__submit:hover {
-    backdrop-color: #18c1e1;
+    background-color: #18c1e1;
 }
 
 .entry {

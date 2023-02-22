@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Microblog</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link href="/static/css/styles.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="navbar">
     <div class="navbar__brand">
-        <img class="navbar__logo" src="logo.svg" alt="The Microblog logo"/>Microblog
+        <img alt="The Microblog logo" class="navbar__logo" src="../static/css/logo.svg"/>Microblog
     </div>
     <ul class="navbar__navigation">
         <li class=navbar__navigation-item>
-            <a href="#" class="navbar__link">Recent</a>
+            <a class="navbar__link" href="#">Recent</a>
         </li>
         <li class=navbar__navigation-item>
-            <a href="#" class="navbar__link">Calendar</a>
+            <a class="navbar__link" href="#">Calendar</a>
         </li>
     </ul>
 </header>
@@ -27,15 +27,15 @@
         <h1>
             Add new entry
         </h1>
-        <form class="form" action="/entry" method="post">
+        <form action="/entry" class="form" method="post">
             <p class="form__input">
-                <label for="entry" class="form__label">
+                <label class="form__label" for="entry">
                     Entry contents:
                 </label>
-                <textarea name="content" id="entry" class="form__textarea">
+                <textarea class="form__textarea" id="entry" name="content">
                 </textarea>
             </p>
-            <button type="submit" class="form__submit">
+            <button class="form__submit" type="submit">
                 Add entry
             </button>
         </form>
