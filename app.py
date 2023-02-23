@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 from pymongo import MongoClient
 
 load_dotenv()
-database_uri = os.environ["DATABASE_URI"]
+database_uri = os.environ["MONGODB_URI"]
 
 def create_app():
     app = Flask(__name__)
