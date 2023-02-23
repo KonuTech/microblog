@@ -27,7 +27,7 @@
         <h1>
             Add new entry
         </h1>
-        <form action="/entry" class="form" method="post">
+        <form class="form" method="POST">
             <p class="form__input">
                 <label class="form__label" for="entry">
                     Entry contents:
@@ -44,15 +44,17 @@
         <h1>
             Recent posts
         </h1>
+        {% for entry in entries %}
         <article class="entry">
             <div>
-                <h2 class="entry__title">A bit of a chill day today</h2>
-                <time class="entry__date" datetime="21-02-2023">• Feb 21</time>
+                <h2 class="entry__title">{{ entry[0] | truncate(30, true) }}</h2>
+                <time class="entry__date" datetime="{{ entry[1] }}">• {{ entry[2] }}</time>
             </div>
             <p class="entry__content">
-                Today I couldn't do much programming, but that's OK! Can't be too awesome every day now!
+                {{ entry[0] }}
             </p>
         </article>
+        {% endfor %}
     </section>
 </main>
 <footer class="footer">
