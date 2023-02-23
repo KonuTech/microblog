@@ -6,11 +6,10 @@ from flask import Flask, render_template, request
 from pymongo import MongoClient
 
 load_dotenv()
-database_uri = os.environ["MONGODB_URI"]
 
 def create_app():
     app = Flask(__name__)
-    client = MongoClient(database_uri)
+    client = MongoClient(os.environ["MONGODB_URI"])
     app.db = client.microblog
 
 
