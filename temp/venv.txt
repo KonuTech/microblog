@@ -1,0 +1,8 @@
+virtualenv --python C:\Users\KonuTech\AppData\Local\Programs\Python\Python39\python.exe venv
+Set-ExecutionPolicy Unrestricted -Scope Process
+.\venv\Scripts\activate
+Linux: source .\venv\Scripts\activate
+pip list
+
+> $env:FLASK_APP = "app.py"
+> flask run
